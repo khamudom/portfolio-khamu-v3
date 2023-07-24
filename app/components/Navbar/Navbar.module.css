@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125em;
+  color: var(--dark-one);
+}
+.navbar .logoWrapper {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.navbar .logoWrapper .logo {
+  margin-inline-end: 8px;
+  height: 40px;
+}
+.navbar .navLinks {
+  margin-inline-start: auto;
+}
+.navbar .navLinks ul {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.navbar .navLinks ul li {
+  padding: 2px;
+}
+.navbar .navLinks ul .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar .navLinks ul .link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-fill-three);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.navbar .navLinks ul .link svg {
+  width: 18px;
+  height: 18px;
+}
+.navbar .navLinks ul .link.link:hover {
+  color: var(--accent-fill-two);
+}
+.navbar .navLinks ul .link.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navbar .navLinks ul .link.link:hover span {
+  transition: all 300ms ease-in;
+}
+.navbar .accounts {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  margin-inline-start: 50px;
+}
+.navbar .accounts svg {
+  width: 24px;
+  height: 24px;
+}
+.navbar .accounts .hamburger {
+  display: none;
+}
+.navbar .accounts a:hover svg {
+  fill: var(--accent-fill-two);
+}/*# sourceMappingURL=Navbar.module.css.map */

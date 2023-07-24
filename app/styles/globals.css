@@ -1,0 +1,97 @@
+:root {
+  --light-one: #ffffff;
+  --light-two: #f2f2f2;
+  --light-three: #f6f7fb;
+  --light-four: #cacaca;
+
+  --dark-one: #000000;
+  --dark-two: #333333;
+  --dark-three: #474747;
+  --dark-four: #7a7a7a;
+
+  --accent-fill-one: #0177ed;
+  --accent-fill-two: #4720f5;
+  --accent-fill-three: #b60fcf;
+
+  --main-background: var(--dark-two);
+  --main-background-inverse: var(--light-two);
+  --main-font: var(--light-three);
+  --main-font-inverse: var(--dark-two);
+  --main-background-inverse: var(--light-two);
+  --main-font-inverse: var(--dark-two);
+  --btn-background-primary: var(--light-one);
+  --btn-font-primary: var(--dark-one);
+  --img-frame: var(--light-three);
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --load-duration: 400ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--light-two);
+  color: var(--dark-one);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

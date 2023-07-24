@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  color: var(--dark-one);
+  position: relative;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border: 1px solid var(--dark-one);
+  background-color: var(--light-one);
+  color: var(--dark-one);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+}
+.btn:hover {
+  background-color: var(--dark-one);
+  color: var(--light-one);
+  cursor: pointer;
+}
+.btn .content {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}/*# sourceMappingURL=Button.module.css.map */
