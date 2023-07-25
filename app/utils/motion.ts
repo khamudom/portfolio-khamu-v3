@@ -1,8 +1,8 @@
-interface textVariantProps {
+type textVariantProps = {
   delay: number;
-}
+};
 
-export const textVariant = ({ delay }: textVariantProps) => {
+export const textVariant = (props: textVariantProps) => {
   return {
     hidden: {
       y: -50,
@@ -14,7 +14,7 @@ export const textVariant = ({ delay }: textVariantProps) => {
       transition: {
         type: 'spring',
         duration: 1.25,
-        delay: delay,
+        delay: props.delay,
       },
     },
   };

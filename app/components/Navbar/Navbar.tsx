@@ -1,25 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
+import { navigationItems } from '@/app/constants';
 import styles from './Navbar.module.css';
-
-const navigationItems = [
-  {
-    id: 0,
-    title: 'Intro',
-    href: '/',
-  },
-  {
-    id: 1,
-    title: 'Projects',
-    href: '/#projects',
-  },
-  {
-    id: 2,
-    title: 'Contact',
-    href: '/#contact',
-  },
-];
 
 const accountLinks = [
   {
@@ -41,7 +24,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logoWrapper}>
         <Link href="/">
-          <img className={styles.logo} src="/images/kulogo.png" alt="logo" />
+          <img className={styles.logo} src="/assets/kulogo.svg" alt="logo" />
         </Link>
         <div>Kham Udom</div>
       </div>

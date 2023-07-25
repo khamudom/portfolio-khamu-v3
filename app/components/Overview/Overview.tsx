@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Overview.module.css';
 import { services } from '../../constants';
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from '../HOC';
 import { fadeIn, textVariant } from '../../utils/motion';
 
 interface ServiceCardProps {

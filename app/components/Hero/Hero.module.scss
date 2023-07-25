@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 700;
+    max-width: 60%;
+    padding-bottom: 10px;
+    background: linear-gradient(
+      90deg,
+      var(--accent-fill-two),
+      var(--accent-fill-three)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    max-width: 50%;
+  }
+
+  .btnContainer {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 20px;
+  }
+}

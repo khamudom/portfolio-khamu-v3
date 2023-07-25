@@ -1,61 +1,39 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from '../../public/assets';
 
-export const navLinks = [
+const navigationItems = [
   {
-    id: 'about',
-    title: 'About',
+    id: 0,
+    title: 'Intro',
+    href: '/',
   },
   {
-    id: 'work',
-    title: 'Work',
+    id: 1,
+    title: 'Projects',
+    href: '/#projects',
   },
   {
-    id: 'contact',
+    id: 2,
     title: 'Contact',
+    href: '/#contact',
   },
 ];
 
 const services = [
   {
     title: 'Web Developer',
-    icon: web,
-  },
-  {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'Content Creator',
-    icon: creator,
+    icon: '',
   },
 ];
 
@@ -81,10 +59,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
@@ -108,57 +82,55 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ];
+
+export interface ExperienceType {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+}
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'UX Engineer - Web Experience Prototyping Team',
+    company_name: 'Microsoft - Full-time',
+    icon: 'assets/company/microsoft.png',
+    iconBg: '#404040',
+    date: 'December 2021 - November 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Collaborate with project managers and designers to build a prototype, based on the start.com website, used to assist in research, exploration, and iterating on the UI and UX design.',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    title: 'UX Engineer - WXC Web Platform',
+    company_name: 'Microsoft - Full-time',
+    icon: 'assets/company/microsoft.png',
+    iconBg: '#404040',
+    date: 'November 2017 - December 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'As a collaborator on the FAST team, I contributed to developing and maintaining components using react and web component technology. I also collaborated with the design team to build internal web components for multiple experiences for Microsoft Edge, Edge Shopping, and Microsoft News. In addition, I helped support the engineering team to help adopt and integrate the FAST components.',
+      'Focused on accessibility to make sure the components are aligned with the W3C ARIA standards. As part of making the components accessible, I addressed the high contrast styles for components in FAST, Fluent UI, Edge, and the Chromium developer tools',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    title: 'Design Developer',
+    company_name: 'Microsoft - Full-time',
+    icon: 'assets/company/microsoft.png',
+    iconBg: '#404040',
+    date: 'December 2012 - November 2017',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Create, contribute and iterate in developing and polishing the UI and UX experience on the Xbox Dashboard, from the launch of the Xbox One to the release of the Xbox One S/X.',
+      'Collaborated with the Xbox Console Design team and PMs to help them understand the product development capabilities and limits, to help generate a technically sound design. In addition, I collaborated with the Xbox Console Development team to convey the design vision.',
     ],
   },
   {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
+    title: 'Aquent at Microsoft = Design Integrator',
+    company_name: 'Aquent - Contract',
+    icon: 'assets/company/aquent.jpg',
+    iconBg: '#404040',
     date: 'Jan 2023 - Present',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
@@ -167,99 +139,29 @@ const experiences = [
       'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
-];
-
-const testimonials = [
   {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+    title: '3D Environment Artist',
+    company_name: 'Amaze Entertainment - Full-time',
+    icon: 'assets/company/amaze.jpg',
+    iconBg: '#404040',
+    date: 'August 2002 - February 2011',
+    points: [''],
   },
 ];
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: '',
+    description: '.',
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
+        name: '',
+        color: '',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: tripguide,
+    image: '',
     source_code_link: 'https://github.com/',
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, navigationItems, projects };

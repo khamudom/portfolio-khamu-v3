@@ -1,0 +1,15 @@
+.sectionHeadText {
+  font-size: clamp(1.625rem, 5vw, 2rem);
+}
+.sectionHeadText,
+.sectionSubText {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
